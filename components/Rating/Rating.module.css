@@ -9,3 +9,7 @@
 .filled {
 	fill: var(--primary);
 }
+
+.editable {
+	cursor: pointer;
+}

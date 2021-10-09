@@ -18,12 +18,30 @@ export const Rating = ({ isEditable = false, rating, setRating, ...props }: Rati
 				<StarIcon
 					className={cn(styles.star, {
 						[styles.filled]: i < currentRating,
+						[styles.editable]: isEditable,
 					})}
 					key={i}
+					onMouseEnter={() => changeDisplay(i + 1)}
+					onMouseLeave={() => changeDisplay(rating)}
+					onClick={() => onClick(i + 1)}
 				/>
 			);
 		});
 		setRatingArray(updateArray);
+	};
+
+	const changeDisplay = (i: number) => {
+		if (!isEditable) {
+			return;
+		}
+		constructRating(i);
+	};
+
+	const onClick = (i: number) => {
+		if (!isEditable || !setRating) {
+			return;
+		}
+		setRating(i);
 	};
 
 	return (
