@@ -1,12 +1,8 @@
-.rating {
-	margin: 0;
-}
-
-.star {
+.star svg {
 	margin-right: 5px;
 }
 
-.filled {
+.filled svg {
 	fill: var(--primary);
 }
 
