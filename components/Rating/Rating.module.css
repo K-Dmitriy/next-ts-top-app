@@ -1,0 +1,11 @@
+.rating {
+	margin: 0;
+}
+
+.star {
+	margin-right: 5px;
+}
+
+.filled {
+	fill: var(--primary);
+}
