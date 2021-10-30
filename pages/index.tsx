@@ -23,6 +23,9 @@ function Home({ menu }: HomeProps): JSX.Element {
 			<Tag size="m" color="green">
 				QWE
 			</Tag>
+			<Tag size="m" color="green">
+				QWE
+			</Tag>
 			<Tag href="!#">QWE</Tag>
 			<Tag color="grey">QWE</Tag>
 			<Tag href="!#" size="m" color="primary">
